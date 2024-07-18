@@ -11,10 +11,6 @@ export const Search = ({apiPath}) => {
 
   useTitle(`Search result for ${queryTerm}`);
 
-  // useEffect(() => {
-  //   document.title = `Search result for ${queryTerm} / Cinemate `;
-  // })
-
   return (
     <main>
       <section className="py-7">

@@ -15,16 +15,16 @@ export const Header = () => {
           document.documentElement.classList.remove('dark')
       }
    
-  },[darkMode]);
+     },[darkMode]);
 
 
-  const activeClass = "text-base block py-2 px-3 text-white bg-blue-700 crounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500";
-  const inactiveClass = "text-base block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700";
+    const activeClass = "text-base block py-2 px-3 text-white bg-blue-700 crounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500";
+    const inactiveClass = "text-base block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700";
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const queryTerm = event.target.search.value;
-    event.target.reset();
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      const queryTerm = event.target.search.value;
+      event.target.reset();
 
     return navigate(`/search?q=${queryTerm}`);
   }

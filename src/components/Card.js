@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import Backup from "../assets/images/backup.png";
+
 export const Card = ({movie}) => {
     const {id,original_title,overview,poster_path} = movie;
     const image = poster_path ? `https://image.tmdb.org/t/p/w500/${poster_path}` : Backup ;
+    
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
         <Link to={`/movie/${id}`}>

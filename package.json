@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "postcss-pseudo-class-any-link": "^9.0.2",
     "tailwindcss": "^3.4.4"
   }
 }

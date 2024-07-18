@@ -8,10 +8,6 @@ export const MovieList = ({apiPath,title}) => {
   const { data: movies } = useFetch(apiPath);
   useTitle(`${title}`);
 
-  // useEffect(() => {
-  //   document.title = `${title} / Cinemate`;
-  // });
-
   return (
     <main>
       <section className="max-w-7xl mx-auto py-7">
