@@ -16,7 +16,7 @@ export const MovieDetail = () => {
     fetchMovie();
   }, [params.id]);
 
-  useTitle(`${movie.title}`);
+  const pageTitle = useTitle(`${movie.title}`);
 
   // useEffect(() => {
   //   document.title = `${movie.title} / Cinemate`;
