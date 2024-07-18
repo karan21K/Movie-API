@@ -16,8 +16,7 @@ export const MovieDetail = () => {
     fetchMovie();
   }, [params.id]);
 
-  //eslint-disable-next-line
-  const pageTitle = useTitle(`${movie.title}`);
+  useTitle(`${movie.title}`);
 
   // useEffect(() => {
   //   document.title = `${movie.title} / Cinemate`;
